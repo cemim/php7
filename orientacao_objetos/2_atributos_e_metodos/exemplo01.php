@@ -29,11 +29,10 @@ class Carro{
 	}
 
 	public function exibir(){
-		echo getModelo();
 		return array(
-			"modelo"=>$this.getModelo(),
-			"motor"=>$this.getMotor(),
-			"ano"=>$this.getAno()
+			"modelo"=>$this->getModelo(),
+			"motor"=>$this->getMotor(),
+			"ano"=>$this->getAno()
 		);
 	}
 }
@@ -44,5 +43,6 @@ $gol->setMotor("1.6");
 $gol->setAno("2017");
 
 print_r($gol->exibir());
+
 
 ?>
