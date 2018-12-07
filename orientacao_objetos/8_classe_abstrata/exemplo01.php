@@ -5,6 +5,7 @@
 		public function trocarMarcha($marcha);
 	}
 
+	// Classes abstratas não podem ser estanciadas
 	abstract class Automovel implements Veiculo {
 		public function acelerar($velocidade)
 		{
@@ -22,7 +23,16 @@
 		}			
 	}
 
-	$carro = new Civic();
+	class DelRey extends Automovel
+	{
+		public function empurrar()
+		{
 
-	$carro->trocarMarcha(1);
+		}
+		
+	}
+
+	$carro = new DelRey();
+	$carro->acelerar(200);
+
 ?>
