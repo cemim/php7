@@ -1,22 +1,23 @@
 <?php
 
-$tipo_banco = "sqlsrv";
+$tipo_banco = "mysql";
 $banco = "dbphp7";
 $servidor = "localhost";
-$usuario = "sa";
-$senha = "F1l1pe.C";
+$usuario = "root";
+$senha = "";
 
-$conn = new PDO("$tipo_banco:Database=$banco;server=$servidor\SQLEXPRESS;ConnectionPooling=0", $usuario, $senha);
+$conn = new PDO("$tipo_banco:dbname=$banco;host=$servidor", $usuario, $senha);
 
+$conn->beginTransaction();
 //Statement
-$stmt = $conn->prepare("DELETE FROM tb_usuarios WHERE idusuario = :ID"); //ID único dos parametros
+$stmt = $conn->prepare("DELETE FROM tb_usuarios WHERE idusuario = ?"); //ID único dos parametros
 
 $id = 1;
 
-$stmt->bindParam(":ID", $id);
+$stmt->execute(array($id));
 
-$stmt->execute();
-
+//$conn->rollBack(); // Para cancelar o delete
+$conn->commit(); // Para confirmar a exclusão
 echo "Apagado com sucesso";
 
 ?>
