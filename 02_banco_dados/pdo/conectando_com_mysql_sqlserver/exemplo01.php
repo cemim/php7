@@ -19,6 +19,8 @@ print_r($results);
 
 echo "<br/><br/>";
 
+echo "<br/>Conectado com MySQL <br/><br/>";
+
 foreach ($results as $row) {
 	foreach ($row as $key => $value) {
 		echo "<strong>" . $key . ": </strong>" . $value . "<br/>";
