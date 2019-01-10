@@ -8,8 +8,8 @@ require_once("config.php");
 //echo $root;
 
 // Carrega uma lista de usuários com método estático
-//$lista = Usuario::getList();
-//echo json_encode($lista);
+$lista = Usuario::getList();
+echo json_encode($lista);
 
 // Carrega uma lista de usuários buscando pelo login
 //$search = Usuario::search("fi");
@@ -20,8 +20,8 @@ require_once("config.php");
 //$usuario->login("root", "12345");
 //echo $usuario;
 
-// Inserir novo usuário
-//$aluno = new Usuario("aluno","123456");
+//// Inserir novo usuário
+//$aluno = new Usuario("Professor","123456");
 //$aluno->insert();
 //echo $aluno;
 
@@ -31,9 +31,9 @@ require_once("config.php");
 //$usuario->update("professor", "novasenha");
 
 // Excluir usuário
-$usuario = new Usuario();
-$usuario->loadById(4);
-$usuario->delete();
-echo $usuario;
+//$usuario = new Usuario();
+//$usuario->loadById(4);
+//$usuario->delete();
+//echo $usuario;
 
 ?>
