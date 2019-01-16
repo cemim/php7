@@ -16,9 +16,13 @@ try{
 	trataNome("");
 
 } catch(Exception $e){
+
 	echo $e->getMessage();
+	
 } finally{ // Sempre vai executar (opcional)
+	
 	echo "<br>Executou o Try!";
+
 }
 
 ?>
