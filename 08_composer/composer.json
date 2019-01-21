@@ -1,0 +1,15 @@
+{
+    "name": "fcemim/composer",
+    "description": "Iniciando estudos do composer",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Filipe Cemim",
+            "email": "filipe.cemim@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "monolog/monolog":"1.*"
+    }
+}

@@ -1,0 +1,12 @@
+instalar o composer;
+
+Comando "composer ini" cria o arquivo json de configuracao do composer
+
+Comando "composer -v" verifica a versao
+
+Comando "composer install" ou "composer update" atualizam as dependencias
+
+importar para o projeto o arquivo autoload.php do composer
+
+Site que determina padrões de desenvolvimento PHP:
+https://www.php-fig.org/
