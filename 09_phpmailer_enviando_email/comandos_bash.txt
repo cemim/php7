@@ -1,0 +1,2 @@
+// Para baixar as dependencias do arquivo composer.json:
+composer update
