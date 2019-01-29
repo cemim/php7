@@ -1,0 +1,20 @@
+Acessar c:\xampp\apache\conf\extra\httpd-vhosts.conf
+
+Editar:
+<VirtualHost *:80>
+    ServerAdmin webmaster@dummy-host2.example.com
+    DocumentRoot "C:/xampp/htdocs/projetos/php7/11_apache_virtual_hosts/local.cemim.com.br"
+    ServerName local.cemim.com.br
+    ErrorLog "logs/dummy-host2.example.com-error.log"
+    CustomLog "logs/dummy-host2.example.com-access.log" common
+	<Directory "C:/xampp/htdocs/projetos/php7/11_apache_virtual_hosts/local.cemim.com.br">
+		Order allow,deny
+		Allow from all
+		Require all granted
+	</Directory>
+</VirtualHost>
+
+Acessar o arquivo C:\Windows\System32\drivers\etc\hosts.txt e editar:
+127.0.0.1		  local.cemim.com.br
+
+Acessar no navegador: local.cemim.com.br
