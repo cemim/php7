@@ -1,9 +1,9 @@
 {
-    "name": "cemim/ecommerce",
+    "name": "hcodebr/ecommerce",
     "authors": [
         {
-            "name": "Filipe Cemim",
-            "email": "example@example.com"
+            "name": "Hcode Treinamentos",
+            "email": "suporte@hcode.com.br"
         }
     ],
     "require": {
