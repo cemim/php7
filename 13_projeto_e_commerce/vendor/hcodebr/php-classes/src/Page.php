@@ -4,9 +4,6 @@ namespace Hcode;
 
 use Rain\Tpl;
 
-/**
- * 
- */
 class Page
 {
 
