@@ -29,7 +29,8 @@ class User extends Model
 
 		$data = $results[0];
 
-		if (password_verify($password, $data["despassword"]) === true) 
+
+		if (password_verify($password, $data["despassword"])) 
 		{
 			
 			$user = new User();
@@ -91,7 +92,7 @@ class User extends Model
 	{
 
 		$sql = new Sql();
-		$password = password_hash($this->getdespassword(), PASSWORD_DEFAULT, ["cost"=>12]);
+		$password = password_hash($this->getdespassword(), PASSWORD_DEFAULT);
 
 
 		// Procedure
@@ -122,15 +123,14 @@ class User extends Model
 	public function update()
 	{
 
-		$sql = new Sql();
-		$password = password_hash($this->getdespassword(), PASSWORD_DEFAULT, ["cost"=>12]);
+		$sql = new Sql();		
 
 		// Procedure
 		$results = $sql->select("CALL sp_usersupdate_save(:iduser, :desperson, :deslogin, :despassword, :desemail, :nrphone, :inadmin)", array(
 			":iduser" => $this->getiduser(),
 			":desperson" => $this->getdesperson(),
 			":deslogin" => $this->getdeslogin(),
-			":despassword" => $password,
+			":despassword" => $this->getdespassword(),
 			":desemail" => $this->getdesemail(),
 			":nrphone" => $this->getnrphone(),
 			":inadmin" => $this->getinadmin()
