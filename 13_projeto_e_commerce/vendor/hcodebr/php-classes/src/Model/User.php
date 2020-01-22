@@ -42,13 +42,11 @@ class User extends Model
 			return $user;
 
 		} 
-		else 
+		else
 		{
+            // O "\" é usado, pois não foi criado o exception do namespace Hcode
+            throw new \Exception("Usuário inexistente ou senha inválida.");
 
-			if (count($results) === 0) {
-				// O "\" é usado, pois não foi criado o exception do namespace Hcode
-				throw new \Exception("Usuário inexistente ou senha inválida.");
-			}
 
 		}
 
