@@ -51,6 +51,6 @@ class __TwigTemplate_dad6d8531bfecda442fdc420fb9484b48557b1775f49995381788a89879
 
     public function getSourceContext()
     {
-        return new Source("", "login/footer.twig", "/var/www/html/phpmyadmin/templates/login/footer.twig");
+        return new Source("", "login/footer.twig", "/var/www/html/projetos/php7/13_projeto_e_commerce/phpmyadmin/templates/login/footer.twig");
     }
 }

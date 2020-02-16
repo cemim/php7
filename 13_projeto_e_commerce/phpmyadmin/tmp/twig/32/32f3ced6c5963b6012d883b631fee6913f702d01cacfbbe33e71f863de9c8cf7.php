@@ -83,6 +83,6 @@ class __TwigTemplate_538257addc93989d112913ff83802124712c06c01ce335161144fe684ce
 
     public function getSourceContext()
     {
-        return new Source("", "login/header.twig", "/var/www/html/phpmyadmin/templates/login/header.twig");
+        return new Source("", "login/header.twig", "/var/www/html/projetos/php7/13_projeto_e_commerce/phpmyadmin/templates/login/header.twig");
     }
 }

@@ -31,7 +31,7 @@
   </div>
   <!-- /.login-logo -->
   <div class="login-box-body">
-    <p class="login-box-msg">Sign in to start your session</p>
+    <p class="login-box-msg">Logar para iniciar a sessão</p>
 
     <form action="/admin/login" method="post">
       <div class="form-group has-feedback">
@@ -39,14 +39,14 @@
         <span class="glyphicon glyphicon-user form-control-feedback"></span>
       </div>
       <div class="form-group has-feedback">
-        <input type="password" class="form-control" placeholder="Password" name="password">
+        <input type="password" class="form-control" placeholder="Senha" name="password">
         <span class="glyphicon glyphicon-lock form-control-feedback"></span>
       </div>
       <div class="row">
         <div class="col-xs-8">
           <div class="checkbox icheck">
             <label>
-              <input type="checkbox"> Remember Me
+              <input type="checkbox"> Lembrar-me
             </label>
           </div>
         </div>
@@ -67,7 +67,7 @@
     </div>
     <!-- /.social-auth-links -->
 
-    <a href="/admin/forgot">I forgot my password</a><br>
+    <a href="/admin/forgot">Esqueci minha senha</a><br>
     <a href="register.html" class="text-center">Register a new membership</a>
 
   </div>

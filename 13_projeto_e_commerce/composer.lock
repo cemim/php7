@@ -62,7 +62,7 @@
                 {
                     "name": "Brent R. Matzelle"
                 }
-            ],
+            ],git config --global user.name "Your Name"
             "description": "PHPMailer is a full-featured email creation and transfer class for PHP",
             "time": "2017-01-09T09:33:47+00:00"
         },

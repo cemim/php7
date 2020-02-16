@@ -118,7 +118,8 @@ class User extends Model
 		$this->setData($results[0]);
 	}
 
-	public function update()
+	public function
+    update()
 	{
 
 		$sql = new Sql();		
@@ -185,7 +186,7 @@ class User extends Model
 
 				$code = base64_encode(openssl_encrypt($dataRecovery["idrecovery"],'AES-128-CBC',User::SECRET,0,User::SECRET_IV));
 
-				$link = "http://www.cemim.com.br/admin/forgot/reset?code=$code";
+				$link = "http://cemim.com.br/admin/forgot/reset?code=$code";
 
 				$mailer = new Mailer(
 					$data["desemail"], 
@@ -260,4 +261,3 @@ class User extends Model
 
 }
 
-?>
