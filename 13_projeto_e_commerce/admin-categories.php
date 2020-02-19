@@ -77,7 +77,6 @@ $app->post("/admin/categories/:idcategory", function ($idcategory){
 
     header('Location: /admin/categories');
     exit();
-
 });
 
 ?>
